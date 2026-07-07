@@ -10,7 +10,7 @@ export interface BrandComponentProps {
 }
 
 export const LoginLogo: FC<BrandComponentProps & { logo?: string }> = ({ className, logo }) => {
-  return <img className={className} src={`${logo ? logo : 'public/img/grafana_icon.svg'}`} alt="S.M.A.R.T Solar" />;
+  return <img className={className} src={`${logo ? logo : 'public/img/grafana_icon.svg'}`} alt="Manfusi Solar" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -43,7 +43,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 };
 
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="S.M.A.R.T Solar" />;
+  return <img className={className} src="public/img/grafana_icon.svg" alt="Manfusi Solar" />;
 };
 
 const LoginBoxBackground = () => {
@@ -59,8 +59,8 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'S.M.A.R.T Solar';
-  static LoginTitle = 'Welcome to S.M.A.R.T Solar';
+  static AppTitle = 'Manfusi Solar';
+  static LoginTitle = 'Welcome to Manfusi Solar';
   static HideEdition = false;
   static GetLoginSubTitle = (): null | string => {
     return null;
